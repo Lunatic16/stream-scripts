@@ -78,14 +78,11 @@ python sportsbite.py --raw
 
 ### Installation
 ```bash
-pip install httpx
-```
-# Clone the repository
 git clone https://github.com/Lunatic16/stream-scripts.git
 cd stream-scripts
-
-# Install Python dependencies
 pip install httpx
+```
+
 ---
 
 ## 📡 Header Handshake & Manual MPV Usage
