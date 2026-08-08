@@ -9,7 +9,7 @@ Lightweight, terminal-native tools to search, extract, and stream live sports an
 * **Zero Heavy TUI Dependencies**: Built directly on native terminal interfaces (`termios`, `tty`) for arrow-key navigation and live fuzzy filtering.
 * **Stream Decryption & Extraction**: Resolves dynamic iFrames, unpacks Base64 payloads, and extracts direct `.m3u8` HLS manifest URLs.
 * **Strict Header Forwarding**: Passes required `Referer`, `Origin`, and `User-Agent` headers directly to `mpv` demuxers to bypass access controls.
-* **Failover Domain Resolution**: Automatically shifts requests across mirror endpoints (`ppv.to`, `ppv.st`, etc.) when primary API gateways are unresponsive.
+* **Failover Domain Resolution**: Automatically shifts requests across mirror endpoints (`p...cx`, `p...st`, etc.) when primary API gateways are unresponsive.
 
 ---
 
@@ -34,7 +34,23 @@ python dlhd.py --raw
 
 ---
 
-### 2. `ppv.py` — Live Event & Substream Selector
+### 2. `sportsbite.py` — SportsBite Live TV Indexer
+Dynamic channel list navigation with inline stream payload decryption.
+
+```bash
+# Launch interactive channel selector
+python sportsbite.py
+
+# Extract and output primary decrypted M3U8 link
+python sportsbite.py --play
+
+# Plain text mode without color sequences
+python sportsbite.py --raw
+```
+
+---
+
+### 3. `ppv.py` — Live Event & Substream Selector
 Categorizes scheduled PPV broadcasts, alternative regional feeds, and audio/quality variants.
 
 ```bash
@@ -49,22 +65,6 @@ python ppv.py --show-default
 
 # Plain text output (automatically enabled when piped)
 python ppv.py --raw
-```
-
----
-
-### 3. `sportsbite.py` — SportsBite Live TV Indexer
-Dynamic channel list navigation with inline stream payload decryption.
-
-```bash
-# Launch interactive channel selector
-python sportsbite.py
-
-# Extract and output primary decrypted M3U8 link
-python sportsbite.py --play
-
-# Plain text mode without color sequences
-python sportsbite.py --raw
 ```
 
 ---
