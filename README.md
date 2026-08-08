@@ -15,7 +15,7 @@ Lightweight, terminal-native tools to search, extract, and stream live sports an
 
 ## 🛠️ Included Utilities
 
-### 1. `dlhd.py` — 24/7 Channel Picker & Extractor
+### 1. `dlhd.py` — DaddyLive 24/7 Channel Picker & Extractor
 Navigates live 24/7 TV streams with real-time availability checks and channel search.
 
 ```bash
@@ -50,7 +50,7 @@ python sportsbite.py --raw
 
 ---
 
-### 3. `ppv.py` — Live Event & Substream Selector
+### 3. `ppv.py` — PPV Live Event & Substream Selector
 Categorizes scheduled PPV broadcasts, alternative regional feeds, and audio/quality variants.
 
 ```bash
