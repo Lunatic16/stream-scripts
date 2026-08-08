@@ -64,15 +64,14 @@ except ImportError:
 
 DEFAULT_API_BASE = "https://api.ppv.st/api"
 ALT_API_BASES    = (
-    "https://api.ppv.to/api",
-    "https://api.ppv.cx/api",
     "https://api.ppv.is/api",
     "https://api.ppv.lc/api",
+    "https://api.ppv.cx/api",
 )
-USER_AGENT       = "ppv_picker/1.0 (+https://ppv.to) curl/8"
+USER_AGENT       = "ppv_picker/1.0 (+https://ppv.st) curl/8"
 TIMEOUT          = 15.0
 
-API_DOMAINS = ("ppv.to", "ppv.st", "ppv.cx", "ppv.is", "ppv.lc")
+API_DOMAINS = ("ppv.st", "ppv.is", "ppv.lc", "ppv.cx")
 
 
 def _build_api_chain(requested_base: str) -> list[str]:
