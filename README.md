@@ -58,7 +58,7 @@ playwright install chromium
 
 ### 1. `bintv.py` — BINTV Event Index Browser
 
-Renders the bintv.cc event index with Playwright, extracting event data from JavaScript onclick handlers. Supports category filtering, live-only mode, and JSON/plain-text output for scripting.
+Renders the bintv event index with Playwright, extracting event data from JavaScript onclick handlers. Supports category filtering, live-only mode, and JSON/plain-text output for scripting.
 
 ```bash
 # Launch interactive event + stream picker
