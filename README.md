@@ -1,3 +1,5 @@
+<div align="center">
+
 # 📺 Live Stream Terminal Indexers & Extractors
 
 **Lightweight, terminal-native tools to search, extract, and stream live sports and 24/7 TV channels using `mpv`.**
@@ -6,6 +8,10 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#-license)
 [![Python](https://img.shields.io/badge/python-3.10+-brightgreen.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)](#)
+
+</div>
+
+---
 
 ## ✨ Features & Architecture
 
