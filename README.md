@@ -27,7 +27,7 @@
 | `bintv.py` | BinTV | Live & scheduled events | Playwright headless Chromium |
 | `dlhd.py` | DaddyLive | 24/7 TV channels | `httpx` + HTML parsing |
 | `ppv.py` | PPV (+ mirrors) | PPV events & substreams | `httpx` REST API w/ failover |
-| `sportsbite.py` | SportsBite | 24/7 sports TV | `httpx` JSON API |
+| `streamed.py` | Streamed PK | Live & scheduled events | `httpx` JSON API |
 
 ---
 
@@ -120,18 +120,18 @@ python ppv.py --raw
 
 ---
 
-### 4. `sportsbite.py` — SportsBite Live TV Indexer
-Dynamic channel list navigation with inline stream payload decryption.
+### 4. `streamed.py` — Streamed PK Live Event & Substream Selector
+Categorizes scheduled sport broadcasts, alternative regional feeds, and audio/quality variants.
 
 ```bash
 # Launch interactive channel selector
-python sportsbite.py
+python streamed.py
 
 # Extract and output primary decrypted M3U8 link
-python sportsbite.py --play
+python streamed.py --play
 
 # Plain text mode without color sequences
-python sportsbite.py --raw
+python streamed.py --raw
 ```
 
 ---
